@@ -1,8 +1,9 @@
 
 # Image URL to use all building/pushing image targets
-REGISTRY ?= casbin
+REGISTRY ?= naskomit
 IMG ?= casdoor
-IMG_TAG ?=$(shell git --no-pager log -1 --format="%ad" --date=format:"%Y%m%d")-$(shell git describe --tags --always --dirty --abbrev=6)
+#IMG_TAG ?=$(shell git --no-pager log -1 --format="%ad" --date=format:"%Y%m%d")-$(shell git describe --tags --always --dirty --abbrev=6)
+IMG_TAG=v1.565.0-r3
 NAMESPACE ?= casdoor
 APP ?= casdoor
 HOST ?= test.com
